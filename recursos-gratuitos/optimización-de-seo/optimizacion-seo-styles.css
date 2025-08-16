@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #00073d;
+    --secondary-color: #ff4040;
+    --dark-gray: #37474F;
+    --light-gray: #ECEFF1;
+    --white: #FFFFFF;
+}
+  
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9fafb;
+    color: #1f2937;
+    line-height: 1.6;
+}
+  
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 15px 50px;
+    color: var(--white);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px var(--secondary-color);
+}
+
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+    margin-left: auto;
+} 
+
+img {
+    height: 10%;
+    width: 10%;
+    padding-right: 30px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--secondary-color);
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+  
+header p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+  
+main {
+    max-width: 960px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.titulo{
+    padding-top: 100px;
+    padding-bottom: 40px;
+    text-align: center;   
+}
+
+.titulo h1{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.titulo p {
+    font-size: 20px;
+}
+
+.intro {
+    background-color: #e0f2fe;
+    padding: 20px;
+    border-left: 6px solid #0284c7;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.video{
+    width: 500px;
+    height: 300px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.modulo {
+    background-color: white;
+    padding: 20px;
+    border-left: 8px solid;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+  
+.modulo h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+  
+.modulo ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.modulo li {
+    margin-bottom: 8px;
+}
+  
+/* Colores personalizados */
+.modulo-azul { border-color: #3b82f6; }
+.modulo-verde { border-color: #10b981; }
+.modulo-amarillo { border-color: #facc15; }
+.modulo-rojo { border-color: #ef4444; }
+.modulo-morado { border-color: #8b5cf6; }
+.modulo-gris { border-color: #6b7280; }
+  
+footer{
+    background: var(--primary-color);
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo h4{
+    color: #ccc;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        background-color: var(--primary-color);
+        width: 100%;
+        display: none; /* Oculto por defecto */
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    nav.active ul {
+        display: flex;
+    }
+}
+
+@media (max-width: 580px) {
+    .video {
+        width: 300px;
+        height: 200px;
+    }
+  
+}
+
+@media (max-width: 386px) {
+    .video {
+        width: 200px;
+        height: 150px;
+    }
+  
+}
+  
+/* Responsive */
+@media (max-width: 600px) {
+    header h1 {
+      font-size: 1.4rem;
+    }
+  
+    main {
+      padding: 0 10px;
+    }
+}
+  

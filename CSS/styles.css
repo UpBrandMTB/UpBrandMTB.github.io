@@ -1,0 +1,352 @@
+/* Definición de colores */
+:root {
+    --primary-color: #00073d;
+    --secondary-color: #ff4040;
+    --dark-gray: #37474F;
+    --light-gray: #ECEFF1;
+    --white: #FFFFFF;
+}
+
+/* Estilos generales */
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--light-gray);
+    color: var(--dark-gray);
+    line-height: 1.6;
+}
+
+/* Estilos del header */
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 15px 50px;
+    color: var(--white);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px var(--secondary-color);
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--secondary-color);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--primary-color);
+}
+
+img {
+    height: 10%;
+    width: 10%;
+    padding-right: 30px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--secondary-color);
+}
+
+/* Estilos del banner */
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background: #33a6e4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #f2fcfe, #33a6e4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #f2fcfe, #33a6e4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    color: var(--white);
+    text-align: center;
+    padding: 20px;
+    margin-top: 70px;
+}
+
+.banner-content {
+    max-width: 600px;
+}
+
+.banner-content img {
+    width: 99%;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+.banner-content p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.banner-content button {
+    background-color: var(--secondary-color);
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: var(--white);
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.banner-content button:hover {
+    background-color: var(--dark-gray);
+}
+
+/* Estilos de seccion 1 */
+.section {
+    padding: 50px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 28px;
+    color: var(--primary-color);
+}
+
+.section p, .section ul {
+    max-width: 800px;
+    margin: auto;
+    font-size: 18px;
+}
+
+.section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.section ul li {
+    background: var(--white);
+    margin: 10px 0;
+    padding: 15px;
+    border-left: 5px solid var(--secondary-color);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+/* Estilos de seccion 2 */
+
+.section2 {
+    padding: 50px;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+.section2 h2 {
+    font-size: 28px;
+    color: var(--primary-color);
+}
+
+.section2 p, .section2 ul {
+    max-width: 800px;
+    margin: auto;
+    font-size: 18px;
+}
+
+.section2 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.section2 ul li {
+    background: var(--white);
+    margin: 10px 0;
+    padding: 15px;
+    border-left: 5px solid var(--secondary-color);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port{
+    width: 24%;
+    height: 200px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(233, 100%, 12%, 0.562);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.hover-galeria a > img{
+    width: 110px;
+    height: 130px;
+}
+
+.hover-galeria a {
+    font-weight: 400;
+    color: #fff;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.hover-galeria a:hover{
+    text-decoration: underline 3px var(--secondary-color);
+}
+
+.hover-galeria > img{
+    width: 100px;
+    height: 115px;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+
+/* Estilos del footer */
+footer{
+    background: var(--primary-color);
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo h4{
+    color: #ccc;
+}
+
+.content-foo p{
+    color: #ccc;
+}
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+    margin-left: auto;
+}
+
+/* Estilos responsive */
+@media screen and (max-width:915px){
+    .imagen-port{
+        width: 44%;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        background-color: var(--primary-color);
+        width: 100%;
+        display: none; /* Oculto por defecto */
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    nav.active ul {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .imagen-port{
+        width: 95%;
+    }
+}
