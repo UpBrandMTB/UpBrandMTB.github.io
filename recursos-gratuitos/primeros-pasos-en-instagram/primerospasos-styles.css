@@ -29,6 +29,16 @@ header {
     box-shadow: 0 4px var(--secondary-color);
 }
 
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+    margin-left: auto;
+}
+
 .video{
     width: 500px;
     height: 300px;
@@ -216,6 +226,7 @@ footer{
     }
 
     .hamburger {
+        padding-right: 50px;
         display: block;
     }
 

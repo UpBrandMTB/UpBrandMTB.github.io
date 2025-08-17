@@ -186,6 +186,7 @@ footer{
     }
 
     .hamburger {
+        padding-right: 50px;
         display: block;
     }
 
@@ -195,7 +196,7 @@ footer{
 }
 
 @media (max-width: 580px) {
-    .video {
+    .etapa-verde .video {
         width: 300px;
         height: 200px;
     }
@@ -203,7 +204,7 @@ footer{
 }
 
 @media (max-width: 386px) {
-    .video {
+    .etapa-verde .video {
         width: 200px;
         height: 150px;
     }

@@ -337,6 +337,7 @@ footer{
     }
 
     .hamburger {
+        padding-right: 50px;
         display: block;
     }
 
